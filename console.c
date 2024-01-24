@@ -31,7 +31,7 @@ bool __not_in_flash_func(is_valid_char)(char *c) {
 op_code __not_in_flash_func(get_command)(command *cmd) {
     current = 0;
 
-    printf("\nRP2040$ ");
+    printf("\n" PROMPT "$ ");
 
     do {
         // time1 = get_absolute_time();
@@ -73,20 +73,3 @@ op_code __not_in_flash_func(get_command)(command *cmd) {
 //     *i = getchar_timeout_us(100);  // length of timeout does not affect
 //     results
 // }
-
-void no_op_handler(uint8_t *args) { printf("handler not implemented\n"); }
-void test_handler(uint8_t *args) { printf("handler not implemented\n"); }
-void text_handler(uint8_t *args) { printf("handler not implemented\n"); }
-void vent_handler(uint8_t *args) { printf("handler not implemented\n"); }
-void reset_handler(uint8_t *args) { printf("handler not implemented\n"); }
-void pos_handler(uint8_t *args) { printf("handler not implemented\n"); }
-void term_handler(uint8_t *args) { printf("handler not implemented\n"); }
-void ack_handler(uint8_t *args) { printf("handler not implemented\n"); }
-void nack_handler(uint8_t *args) { printf("handler not implemented\n"); }
-void err_handler(uint8_t *args) { printf("handler not implemented\n"); }
-void stat_handler(uint8_t *args) { printf("handler not implemented\n"); }
-void get_handler(uint8_t *args) { printf("handler not implemented\n"); }
-void set_handler(uint8_t *args) { printf("handler not implemented\n"); }
-void help_handler(uint8_t *args) {
-    printf("Enter commands at the promp below\nCommand format: Op-Code args\n");
-}

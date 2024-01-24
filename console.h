@@ -6,6 +6,8 @@
 
 #define BUF_SIZE 255
 
+#define PROMPT "RP2040"
+
 bool is_valid_char(char *c);
 op_code get_command(command *cmd);
 
