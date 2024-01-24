@@ -1,0 +1,4 @@
+[submodule "std-cmd"]
+	path = std-cmd
+	url = https://github.com/UMDBPP/std-cmd.git
+	branch = main

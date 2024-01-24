@@ -1,7 +1,7 @@
 #ifndef CONSOLE_H
 #define CONSOLE_H
 
-#include "../std-cmd/command.h"
+#include "std-cmd/command.h"
 #include "pico/stdlib.h"
 
 #define BUF_SIZE 255

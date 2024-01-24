@@ -5,13 +5,15 @@
 #include <string.h>
 
 #include "pico/stdlib.h"
-#include "../std-cmd/command.h"
+#include "std-cmd/command.h"
 
 static int chars_rxed = 0;
 
 char buf[BUF_SIZE];
 char curr_char = 0;
 uint16_t current = 0;
+// absolute_time_t time1;
+// absolute_time_t time2;
 
 // Try to refactor to fast macro
 bool __not_in_flash_func(is_valid_char)(char *c) {
@@ -32,10 +34,15 @@ op_code __not_in_flash_func(get_command)(command *cmd) {
     printf("\nRP2040$ ");
 
     do {
+        // time1 = get_absolute_time();
         curr_char = getchar_timeout_us(0);
 
         if (is_valid_char(&curr_char)) {
             putchar_raw(curr_char);
+            // time2 = get_absolute_time();
+
+            // printf("\n\ndelay from receive to print %ld\n\n",
+            //        absolute_time_diff_us(time1, time2));
 
             buf[current] = curr_char;
 
@@ -53,29 +60,9 @@ op_code __not_in_flash_func(get_command)(command *cmd) {
 
     buf[current] = 0;
 
-    parse_text_command(buf, cmd);
+    parse_text_command(buf, cmd, false);
 
     return cmd->op;
-
-    // chars_rxed = current - 1;
-
-    // current = 0;
-
-    // while (buf[current] != ' ') current++;
-
-    // if (current = chars_rxed + 1)
-    //     return NOP;
-    // else
-    //     buf[current] = 0;
-
-    // if (strcmp(buf, echo_command_string) == 0)
-    //     return TEXT;
-    // else if (strcmp(buf, reset_command_string) == 0)
-    //     return RESET;
-    // else if (strcmp(buf, status_command_string) == 0)
-    //     return STAT;
-    // else
-    //     return NOP;
 }
 
 // void callback(void *ptr) {
@@ -100,3 +87,6 @@ void err_handler(uint8_t *args) { printf("handler not implemented\n"); }
 void stat_handler(uint8_t *args) { printf("handler not implemented\n"); }
 void get_handler(uint8_t *args) { printf("handler not implemented\n"); }
 void set_handler(uint8_t *args) { printf("handler not implemented\n"); }
+void help_handler(uint8_t *args) {
+    printf("Enter commands at the promp below\nCommand format: Op-Code args\n");
+}
