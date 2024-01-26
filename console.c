@@ -29,8 +29,6 @@ bool __not_in_flash_func(is_valid_char)(char *c) {
 }
 
 op_code __not_in_flash_func(get_command)(command *cmd) {
-    current = 0;
-
     printf("\n" PROMPT "$ ");
 
     get_string(buf);
@@ -41,6 +39,8 @@ op_code __not_in_flash_func(get_command)(command *cmd) {
 }
 
 void __not_in_flash_func(get_string)(char *string) {
+    current = 0;
+
     do {
         curr_char = getchar_timeout_us(0);
 
