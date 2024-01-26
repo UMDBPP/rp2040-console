@@ -33,18 +33,21 @@ op_code __not_in_flash_func(get_command)(command *cmd) {
 
     printf("\n" PROMPT "$ ");
 
+    get_string(buf);
+
+    parse_text_command(buf, cmd, false);
+
+    return cmd->op;
+}
+
+void __not_in_flash_func(get_string)(char *string) {
     do {
-        // time1 = get_absolute_time();
         curr_char = getchar_timeout_us(0);
 
         if (is_valid_char(&curr_char)) {
             putchar_raw(curr_char);
-            // time2 = get_absolute_time();
 
-            // printf("\n\ndelay from receive to print %ld\n\n",
-            //        absolute_time_diff_us(time1, time2));
-
-            buf[current] = curr_char;
+            string[current] = curr_char;
 
             switch (curr_char) {
                 case 8:
@@ -58,11 +61,7 @@ op_code __not_in_flash_func(get_command)(command *cmd) {
 
     } while (curr_char != 0x0A);
 
-    buf[current] = 0;
-
-    parse_text_command(buf, cmd, false);
-
-    return cmd->op;
+    string[current] = 0;
 }
 
 // void callback(void *ptr) {
