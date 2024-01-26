@@ -10,5 +10,6 @@
 
 bool is_valid_char(char *c);
 op_code get_command(command *);
+void get_string(char *buf);
 
 #endif
