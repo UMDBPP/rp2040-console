@@ -1,0 +1,3 @@
+/Users/michaelshipman/Developer/pico/console/rp2040-console/examples/multicore/build/pioasm/CMakeFiles/pioasm.dir
+/Users/michaelshipman/Developer/pico/console/rp2040-console/examples/multicore/build/pioasm/CMakeFiles/edit_cache.dir
+/Users/michaelshipman/Developer/pico/console/rp2040-console/examples/multicore/build/pioasm/CMakeFiles/rebuild_cache.dir

@@ -2,3 +2,7 @@
 	path = std-cmd
 	url = https://github.com/UMDBPP/std-cmd.git
 	branch = main
+[submodule "examples/pico-sdk"]
+	path = examples/pico-sdk
+	url = https://github.com/raspberrypi/pico-sdk.git
+	branch = master
