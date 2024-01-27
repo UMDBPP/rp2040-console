@@ -24,7 +24,8 @@ CMakeFiles/test.dir/test.c.obj: \
  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/strings.h \
  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/string.h \
- /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
+ /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/multicore/../../console.h \
+ /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
  /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/common/pico_base/include/pico.h \
  /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/common/pico_base/include/pico/types.h \
  /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/common/pico_base/include/pico/assert.h \
@@ -45,35 +46,35 @@ CMakeFiles/test.dir/test.c.obj: \
  /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
  /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/common/pico_base/include/pico/types.h \
  /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/common/pico_base/include/pico/error.h \
+ /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
+ /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/common/pico_time/include/pico/time.h \
+ /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+ /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
  /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+ /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+ /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+ /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+ /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+ /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h \
+ /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
+ /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h \
+ /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
+ /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
  /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
  /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
  /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h \
  /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
  /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
  /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+ /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
+ /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
+ /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/multicore/../../std-cmd/command.h \
+ /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/multicore/../../std-cmd/command.h \
  /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/pico_multicore/include/pico/multicore.h \
  /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/common/pico_sync/include/pico/sync.h \
  /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/common/pico_sync/include/pico/sem.h \
  /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
- /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/common/pico_time/include/pico/time.h \
- /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
- /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
- /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
  /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
  /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/common/pico_sync/include/pico/mutex.h \
  /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/common/pico_sync/include/pico/critical_section.h \
- /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
- /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
- /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
- /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
- /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
- /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h \
- /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
- /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h \
- /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
- /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
- /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
- /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/multicore/../../console.h \
- /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/multicore/../../std-cmd/command.h \
- /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/multicore/../../std-cmd/command.h
+ /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/common/pico_util/include/pico/util/queue.h
