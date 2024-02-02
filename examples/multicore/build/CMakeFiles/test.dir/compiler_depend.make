@@ -2965,6 +2965,7 @@ CMakeFiles/test.dir/test.c.obj: /Users/michaelshipman/Developer/pico/console/rp2
   /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/common/pico_sync/include/pico/sem.h \
   /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/common/pico_sync/include/pico/sync.h \
   /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/common/pico_time/include/pico/time.h \
+  /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/common/pico_util/include/pico/util/queue.h \
   /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
   /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
   /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \

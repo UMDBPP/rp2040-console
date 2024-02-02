@@ -17,4 +17,4 @@ pico_enable_stdio_usb(test 1)
 
 pico_add_extra_outputs(test)
 
-target_link_libraries(test pico_stdlib pico_multicore)
+target_link_libraries(test pico_stdlib pico_multicore pico_util)

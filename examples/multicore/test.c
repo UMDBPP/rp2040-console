@@ -2,16 +2,20 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "../../console.h"
+#include "../../std-cmd/command.h"
 #include "hardware/irq.h"
 #include "hardware/uart.h"
 #include "pico/multicore.h"
 #include "pico/stdlib.h"
-#include "../../console.h"
-#include "../../std-cmd/command.h"
+#include "pico/util/queue.h"
 
 #define GET_FLAG 42
+#define FIFO_LENGTH 32
 
 command cmd = {0x00, NOP, {0, 0, 0, 0, 0, 0, 0}, NULL};
+
+queue_t example_fifo;
 
 void help_handler(uint8_t *args);
 void core1_entry(void);
@@ -20,6 +24,8 @@ int main() {
     stdio_init_all();
 
     sleep_ms(5000);
+
+    queue_init(&example_fifo, 4, FIFO_LENGTH);
 
     printf("Multicore RP2040 Console Example - %s %s", __DATE__, __TIME__);
 
@@ -49,9 +55,12 @@ void core1_entry() {
     uint32_t flag = 0;
 
     while (true) {
-        if (multicore_fifo_pop_timeout_us(100, &flag) && flag == GET_FLAG)
+        if (multicore_fifo_pop_timeout_us(100, &flag) && flag == GET_FLAG) {
             multicore_fifo_push_blocking(current);
-        current++;
+        }
+
+        current = current + 1;
+        tight_loop_contents();
     }
 }
 
