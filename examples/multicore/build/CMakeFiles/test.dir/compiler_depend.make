@@ -6,6 +6,7 @@ CMakeFiles/test.dir/Users/michaelshipman/Developer/pico/console/rp2040-console/c
   /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
   /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/alloca.h \
   /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/assert.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/ctype.h \
   /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
   /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/machine/_types.h \
   /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
@@ -3052,6 +3053,8 @@ CMakeFiles/test.dir/test.c.obj: /Users/michaelshipman/Developer/pico/console/rp2
 
 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/machine/_time.h:
 
+/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/machine/_endian.h:
+
 /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/pico_printf/include/pico/printf.h:
 
 /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/common/pico_base/include/pico/types.h:
@@ -3081,8 +3084,6 @@ CMakeFiles/test.dir/test.c.obj: /Users/michaelshipman/Developer/pico/console/rp2
 /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/pico_double/include/pico/double.h:
 
 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/math.h:
-
-/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/machine/_endian.h:
 
 /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/lib/tinyusb/src/common/tusb_common.h:
 
@@ -3228,6 +3229,8 @@ CMakeFiles/test.dir/test.c.obj: /Users/michaelshipman/Developer/pico/console/rp2
 
 /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/lib/tinyusb/src/class/video/video_device.c:
 
+/Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c:
+
 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/_intsup.h:
 
 /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c:
@@ -3239,22 +3242,6 @@ CMakeFiles/test.dir/test.c.obj: /Users/michaelshipman/Developer/pico/console/rp2
 /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h:
 
 /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c:
-
-/Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/pico_float/include/pico/float.h:
-
-/Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/hardware_vreg/include/hardware/vreg.h:
-
-/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/c++/13.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/c++config.h:
-
-/Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/common/pico_time/time.c:
-
-/Users/michaelshipman/Developer/pico/console/rp2040-console/std-cmd/command.h:
-
-/Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h:
-
-/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/string.h:
-
-/Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c:
 
 /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/common/pico_sync/mutex.c:
 
@@ -3271,6 +3258,10 @@ CMakeFiles/test.dir/test.c.obj: /Users/michaelshipman/Developer/pico/console/rp2
 /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h:
 
 /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/lib/tinyusb/src/osal/osal.h:
+
+/Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c:
+
+/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/string.h:
 
 generated/pico_base/pico/config_autogen.h:
 
@@ -3293,8 +3284,6 @@ generated/pico_base/pico/config_autogen.h:
 /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/ioqspi.h:
 
 /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h:
-
-/Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c:
 
 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/stdio.h:
 
@@ -3338,6 +3327,10 @@ generated/pico_base/pico/config_autogen.h:
 
 /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h:
 
+/Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h:
+
+/Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h:
+
 /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h:
 
 /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h:
@@ -3369,6 +3362,10 @@ generated/pico_base/pico/config_autogen.h:
 /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp:
 
 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/stdio.h:
+
+/Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h:
+
+/Users/michaelshipman/Developer/pico/console/rp2040-console/std-cmd/command.h:
 
 /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c:
 
@@ -3440,21 +3437,15 @@ generated/pico_base/pico/version.h:
 
 /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h:
 
+/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/_types.h:
+
 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/assert.h:
 
 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/newlib.h:
 
-/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/_types.h:
-
-/Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/hardware_xosc/xosc.c:
-
 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h:
 
-/Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h:
-
-/Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h:
-
-/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/string.h:
+/Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/hardware_xosc/xosc.c:
 
 /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/lib/tinyusb/src/common/tusb_types.h:
 
@@ -3462,11 +3453,23 @@ generated/pico_base/pico/version.h:
 
 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/machine/_default_types.h:
 
+/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/_locale.h:
+
+/Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/pico_float/include/pico/float.h:
+
+/Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2_common/hardware_vreg/include/hardware/vreg.h:
+
+/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/c++/13.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/c++config.h:
+
+/Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/common/pico_time/time.c:
+
+/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/ctype.h:
+
+/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/string.h:
+
 /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/psm.h:
 
 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/_stdint.h:
-
-/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/_locale.h:
 
 /Users/michaelshipman/Developer/pico/console/rp2040-console/examples/pico-sdk/lib/tinyusb/src/class/cdc/cdc.h:
 

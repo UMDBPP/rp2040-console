@@ -15,7 +15,8 @@
 
 command cmd = {0x00, NOP, {0, 0, 0, 0, 0, 0, 0}, NULL};
 
-queue_t example_fifo;
+queue_t zero_one_queue;
+queue_t one_zero_queue;
 
 void help_handler(uint8_t *args);
 void core1_entry(void);
@@ -23,11 +24,14 @@ void core1_entry(void);
 int main() {
     stdio_init_all();
 
+    set_sys_clock_48mhz();
+
     sleep_ms(5000);
 
-    queue_init(&example_fifo, 4, FIFO_LENGTH);
+    queue_init(&zero_one_queue, 4, FIFO_LENGTH);
+    queue_init(&one_zero_queue, 4, FIFO_LENGTH);
 
-    printf("Multicore RP2040 Console Example - %s %s", __DATE__, __TIME__);
+    printf("Multicore RP2040 Console Example - %s %s\n", __DATE__, __TIME__);
 
     multicore_launch_core1(core1_entry);
 
@@ -40,8 +44,10 @@ int main() {
 }
 
 void get_handler(uint8_t *args) {
-    multicore_fifo_push_blocking(GET_FLAG);
-    uint32_t current = multicore_fifo_pop_blocking();
+    uint32_t data = GET_FLAG;
+    uint32_t current = 0;
+    queue_add_blocking(&zero_one_queue, &data);
+    queue_remove_blocking(&one_zero_queue, &current);
 
     printf("Current value from core 1 loop is %d\n", current);
 }
@@ -55,11 +61,14 @@ void core1_entry() {
     uint32_t flag = 0;
 
     while (true) {
-        if (multicore_fifo_pop_timeout_us(100, &flag) && flag == GET_FLAG) {
-            multicore_fifo_push_blocking(current);
+        if (!queue_is_empty(&zero_one_queue)) {
+            queue_remove_blocking(&zero_one_queue, &flag);
+
+            if (flag == GET_FLAG) queue_add_blocking(&one_zero_queue, &current);
         }
 
-        current = current + 1;
+        current++;
+        sleep_us(100);
         tight_loop_contents();
     }
 }
